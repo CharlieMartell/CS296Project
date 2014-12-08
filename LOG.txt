@@ -1,0 +1,36 @@
+Work Log:
+
+11/24/14:
+
+Begun working on Application "HomeSafe".
+Quickly finding this application is not a good demonstration of ndk or synchronization.
+Brainstorming other ideas think I will made sudokusolver as I can use pthreads.
+
+11/28/14:
+
+Created SudokuSolver application, setup all java files now I just need to write c to actually solve.
+
+12/2/14:
+
+Working on C code encountering some errors with jni.h. As of now application layout is done and
+front end is working as intended however, backend is having issues parsing JStrings to char*.
+
+12/4/14: 
+
+Still working on issue, chaging scope of project again to SudokuChecker as Solver is finnicky,
+because initializing arrays in native c which is how I setup to declare a board can be strange as 
+I have to parse Jstrings into ints and if there isnt anything there on the board it was giving me many errors.
+
+12/5/14:
+
+Wrote all of backend C code to check if a 81 character string is considered a valid sudoku board.
+
+12/7/14:
+
+Still many problems with Eclipse and NDK not sure how to figure it out, eclipse seems to find jni.h
+but is unable to find any of the methods included in it :\
+
+12/8/14:
+
+Found some workarounds using android studio to do this part and build it was very hacky...
+
